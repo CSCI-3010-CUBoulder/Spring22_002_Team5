@@ -83,13 +83,32 @@ std::vector<bool> LessMask(std::vector<int> nums, int less_than);
 double Sum(std::vector<double> nums);
 
 // Multiplies all numbers in a vector together and returns the resulting value
-double Product(std::vector<double> nums);
+double Product(std::vector<double> nums)
+{
+    double prod = 1;
+    for(auto i : nums) {
+        prod *= i;
+    }
+    return prod;
+}
 
 // Adds an double n to each element of a given vector
-std::vector<double> VectorPlusN(std::vector<double> v, double n);
+std::vector<double> VectorPlusN(std::vector<double> v, double n)
+{
+    for(auto i : v) {
+        i += n;
+    }
+    return v;
+}
 
 // Multiples an double n with each element of a given vector
-std::vector<double> VectorTimesN(std::vector<double> v, double n);
+std::vector<double> VectorTimesN(std::vector<double> v, double n)
+{
+    for(auto i : v) {
+        i *= n;
+    }
+    return v;
+}
 
 // takes in two doubles and returns a vector of size n with
 // values n*1, n*2, n*3... up to n*m
