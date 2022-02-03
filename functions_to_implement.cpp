@@ -117,3 +117,8 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 
 // subtracts n to each element of the vector
 std::vector<double> SubtractN(std::vector<double>, double n);
+
+// adds n to each element of the vector
+std::vector<double> AddNzz(std::vector<int>, int n);
+// adds n to each element of the vector
+std::vector<float> AddNzzz(std::vector<int>, int n);
