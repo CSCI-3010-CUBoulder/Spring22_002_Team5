@@ -55,7 +55,16 @@ std::vector<int> SquaresUntil(int n);
 int NthFibonacci(int n);
 
 // takes an int, n, and returns the factorial of that int (n!)
-int Factorial(int n);
+int Factorial(int n)
+{
+    if(n<0) return -1;  //error bad input
+    if(n==0) return 1;
+    int out = 1;
+    for(int i = 1; i <= n; i++) {
+        out *= i;
+    }
+    return out;
+}
 
 // returns -1 if the number is negative and 1 if positive
 int Sign(int num)
