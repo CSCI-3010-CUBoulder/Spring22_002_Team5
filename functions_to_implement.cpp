@@ -1,6 +1,9 @@
+andrews_branch
+=======
 #include <string>
 #include <vector>
 
+main
 /* String functions section */
 
 // Splits a single string on separator into a vector of strings
@@ -58,10 +61,14 @@ int NthFibonacci(int n);
 int Factorial(int n);
 
 // returns -1 if the number is negative and 1 if positive
+andrews_branch
+int Sign(int num);
+=======
 int Sign(int num)
 {
     return (num >= 0 ? 1 : -1);
 }
+main
 
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
 // If the double is in b, but not in a, nothing happens.
@@ -86,6 +93,7 @@ std::vector<bool> LessMask(std::vector<int> nums, int less_than);
 double Sum(std::vector<double> nums);
 
 // Multiplies all numbers in a vector together and returns the resulting value
+ andrews_branch
 double Product(std::vector<double> nums);
 
 // Adds an double n to each element of a given vector
@@ -93,6 +101,34 @@ std::vector<double> VectorPlusN(std::vector<double> v, double n);
 
 // Multiples an double n with each element of a given vector
 std::vector<double> VectorTimesN(std::vector<double> v, double n);
+=======
+double Product(std::vector<double> nums)
+{
+    double prod = 1;
+    for(auto i : nums) {
+        prod *= i;
+    }
+    return prod;
+}
+
+// Adds an double n to each element of a given vector
+std::vector<double> VectorPlusN(std::vector<double> v, double n)
+{
+    for(auto i : v) {
+        i += n;
+    }
+    return v;
+}
+
+// Multiples an double n with each element of a given vector
+std::vector<double> VectorTimesN(std::vector<double> v, double n)
+{
+    for(auto i : v) {
+        i *= n;
+    }
+    return v;
+}
+main
 
 // takes in two doubles and returns a vector of size n with
 // values n*1, n*2, n*3... up to n*m
@@ -117,8 +153,11 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 
 // subtracts n to each element of the vector
 std::vector<double> SubtractN(std::vector<double>, double n);
+ andrews_branch
+=======
 
 // adds n to each element of the vector
 std::vector<double> AddNzz(std::vector<int>, int n);
 // adds n to each element of the vector
 std::vector<float> AddNzzz(std::vector<int>, int n);
+main
