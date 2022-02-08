@@ -125,10 +125,20 @@ double Sign(double num);
 
 
 // adds n to each element of the vector
-std::vector<int> AddN(std::vector<int>, int n);
+std::vector<int> AddN(std::vector<int>vec, int n){
+    for(int i = 0; i < vec.size(); i++) {
+        vec[i] = vec[i] + n;
+    }
+    return vec;
+}
 
 // adds n to each element of the vector
-std::vector<double> AddN(std::vector<double>, double n);
+std::vector<double> AddN(std::vector<double>vec, double n){
+    for(int i = 0; i < vec.size(); i++) {
+        vec[i] = vec[i] + n;
+    }
+    return vec;
+}
 
 // adds n to each element of the vector
 std::vector<std::string> AddN(std::vector<std::string>, std::string n);
@@ -140,7 +150,4 @@ std::vector<int> SubtractN(std::vector<int>, int n);
 // subtracts n to each element of the vector
 std::vector<double> SubtractN(std::vector<double>, double n);
 
-// adds n to each element of the vector
-std::vector<double> AddNzz(std::vector<int>, int n);
-// adds n to each element of the vector
-std::vector<float> AddNzzz(std::vector<int>, int n);
+
