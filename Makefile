@@ -4,9 +4,8 @@ CXXFLAGS = -std=c++17 -Wall  # flags for the compiler (use c++17 standards, turn
 # runs for "make all"
 all: test
 
-
 clean:
-        rm test
+	rm test
 
-main: test.cpp
-        $(CXX) $(CXXFLAGS) test.cpp -o test
+test: test.cpp
+	$(CXX) $(CXXFLAGS) test.cpp -o test
