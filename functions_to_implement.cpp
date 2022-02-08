@@ -67,7 +67,6 @@ int Sign(int num)
 {
     return (num >= 0 ? 1 : -1);
 }
-
 // takes two vectors of doubles, a and b. The function then removes elements from a if they are also in b.
 // If the double is in b, but not in a, nothing happens.
 std::vector<double> MatchVectors(std::vector<double> a, std::vector<double> b);
@@ -90,7 +89,11 @@ std::vector<bool> LessMask(std::vector<int> nums, int less_than);
 // Sums all numbers in a vector and returns the resulting value
 double Sum(std::vector<double> nums);
 
-// Multiplies all numbers in a vector together and returns the resulting value
+// Adds an double n to each element of a given vector
+std::vector<double> VectorPlusN(std::vector<double> v, double n);
+
+// Multiples an double n with each element of a given vector
+std::vector<double> VectorTimesN(std::vector<double> v, double n);
 double Product(std::vector<double> nums)
 {
     double prod = 1;
