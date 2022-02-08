@@ -1,5 +1,15 @@
 #define CATCH_CONFIG_MAIN 
 #include "catch.hpp"
+andrews_branch
+#include "functions_to_implement.cpp"
+
+
+TEST_CASE("Number of 2s computed", "[new]")
+{REQUIRE( RemoveTwos(16) == 1);
+}
+TEST_CASE("Figure the sum of the vector values", "[new]")
+{REQUIRE(Sum(1)}
+=======
 
 std::vector<int> AddN(std::vector<int>vec, int n){
 
@@ -20,3 +30,4 @@ TEST_CASE( "vector are computed", "[addN]" ) {
     REQUIRE( AddN(vec2,1) ==  vec3);
     REQUIRE( AddN(vec3,1) ==  vec4);
 }
+main
